@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.2.21)  14 MAR 2022 11:22
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.2.21)  14 MAR 2022 13:42
  restricted system commands enabled.
 **resume.tex
 (./resume.tex
@@ -1145,51 +1145,41 @@ Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 \BKM@id=\count319
 ))
-<picture.jpg, id=7, 1422.81563pt x 1422.81563pt>
-File: picture.jpg Graphic file (type jpg)
-<use picture.jpg>
-Package luatex.def Info: picture.jpg  used on input line 54.
-(luatex.def)             Requested size: 1422.81216pt x 1422.81216pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
-
- []
-
 
 Class scrartcl Warning: Usage of deprecated command `\ifthispageodd'.
 (scrartcl)              The command has been renamed because of a
 (scrartcl)              recommendation of The LaTeX Project Team.
 (scrartcl)              Please replace `\ifthispageodd' by `\Ifthispageodd' on 
-input line 225.
+input line 218.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
 [][]  []  []  []
  []
 
 
-Underfull \hbox (badness 4832) in paragraph at lines 225--225
+Underfull \hbox (badness 4832) in paragraph at lines 218--218
 []  []  []  []  []
  []
 
 
 LaTeX Font Warning: Font shape `TU/FontAwesome(0)/m/it' undefined
-(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 225.
+(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 218.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
 [1
 
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./picture
-.jpg>] (./resume.aux)
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./resume.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1198,24 +1188,24 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32294 strings out of 478531
+ 32247 strings out of 478531
  125007,1373583 words of node,token memory allocated
  513 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 68 glue_spec,
  5 attribute_list, 2 write nodes
-   avail lists: 2:3961,3:1327,4:1085,5:1228,6:203,7:9187,8:39,9:910,10:5,11:613
- 51184 multiletter control sequences out of 65536+600000
+   avail lists: 2:3805,3:1261,4:1057,5:1200,6:195,7:8919,8:39,9:848,10:5,11:601
+ 51141 multiletter control sequences out of 65536+600000
  53 fonts using 13017335 bytes
- 128i,15n,123p,10601b,833s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,15n,123p,10601b,835s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/truetype/typoland/carlito/Carlito-Bold
 Italic.ttf></usr/local/texlive/2021/texmf-dist/fonts/truetype/typoland/carlito/C
 arlito-Italic.ttf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/font
 awesome/FontAwesome.otf></usr/local/texlive/2021/texmf-dist/fonts/truetype/typol
 and/carlito/Carlito-Bold.ttf></usr/local/texlive/2021/texmf-dist/fonts/truetype/
 typoland/carlito/Carlito-Regular.ttf>
-Output written on resume.pdf (1 page, 106939 bytes).
+Output written on resume.pdf (1 page, 72290 bytes).
 
-PDF statistics: 71 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 69 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
