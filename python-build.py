@@ -140,7 +140,7 @@ class deploy_pipeline:
 
 
         #subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'my_package'])
-        result = subprocess.run(['ghp-import', '-n', '-p', '-f', '-c', cname, 'deploy' ], capture_output=True, text=True)
+        result = subprocess.run(['ghp-import', '-n', '-p', '-f', '-c', cname, 'deployz' ], capture_output=True, text=True)
         ##print("Output")
 
         print(result.stdout)
