@@ -76,7 +76,7 @@
 
 % default sizes, margins, ...
 \setlength\highlightwidth{8cm}
-\setlength\headerheight{6cm}
+\setlength\headerheight{4cm}
 \setlength\marginleft{1cm}
 \setlength\marginright{\marginleft}
 \setlength\margintop{1cm}
