@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.2.21)  14 MAR 2022 11:19
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.2.21)  14 MAR 2022 11:21
  restricted system commands enabled.
 **resume.tex
 (./resume.tex
@@ -1203,7 +1203,7 @@ Here is how much of LuaTeX's memory you used:
  513 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 68 glue_spec,
  5 attribute_list, 2 write nodes
-   avail lists: 2:3960,3:1327,4:1085,5:1228,6:203,7:9187,8:39,9:910,10:5,11:613
+   avail lists: 2:3915,3:1325,4:1061,5:1204,6:201,7:9009,8:39,9:906,10:5,11:601
  51184 multiletter control sequences out of 65536+600000
  53 fonts using 13017335 bytes
  128i,15n,123p,10601b,833s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1213,7 +1213,7 @@ arlito-Italic.ttf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/font
 awesome/FontAwesome.otf></usr/local/texlive/2021/texmf-dist/fonts/truetype/typol
 and/carlito/Carlito-Bold.ttf></usr/local/texlive/2021/texmf-dist/fonts/truetype/
 typoland/carlito/Carlito-Regular.ttf>
-Output written on resume.pdf (1 page, 106939 bytes).
+Output written on resume.pdf (1 page, 107138 bytes).
 
 PDF statistics: 71 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
