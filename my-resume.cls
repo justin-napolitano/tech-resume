@@ -104,6 +104,7 @@
 \definecolor{darkgray}{HTML}{333333}
 \definecolor{mediumgray}{HTML}{444444}
 \definecolor{gray}{HTML}{5D5D5D}
+\definecolor{lightGray}{HTML}{D3D3D3}
 % Basic colors
 \definecolor{green}{HTML}{C2E15F}
 \definecolor{orange}{HTML}{FDA333}
@@ -259,11 +260,11 @@
             }{}
             % print the header text
                 \begin{minipage}[t][2em]{\linewidth}
-                    {\Huge\bfseries\color{headerfontcolor}\MakeUppercase{\@name}\par}
+                    {\Huge\color{headerfontcolor}\MakeUppercase{\@name}\par}
                 \end{minipage}%
                 \vfill%
                 \begin{minipage}[b][\dimexpr \headerheight-2em-\marginbottom]{\linewidth}%
-                    {\large\bfseries\color{headerfontcolor}\@tagline\par}
+                    {\large\color{headerfontcolor}\@tagline\par}
                 \end{minipage}%
         % finish the minipages for text and photo if photo is given
         \ifdef{\@photodiameter}{%
@@ -353,11 +354,16 @@
 % SECTIONS, SUBSECTIONS, AND MORE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% SUBTEXT
+\newcommand{\subtext}[1]{\footnotesize\textit{#1}\par\vspace{.5em}}
+
+
+
 % redefine section in caps, bold and with rule below
 \renewcommand{\section}[2][]{%
     \bigskip%
     % \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr 1pt-\baselineskip}\raggedright\input{#1}}}%
-    \ifstrequal{#1}{}{}{\large \makebox[5mm][c]{#1}\hspace{0.5em}}
+    \ifstrequal{#1}{}{}{\makebox[5mm][c]{#1}\hspace{0.5em}}
     {\color{heading}\Large\bfseries\MakeUppercase{#2}}\\[-1ex]%
     {\color{heading}\rule{\linewidth}{1.0pt}\par}\smallskip
 }
@@ -365,7 +371,7 @@
 % redefine subsection as bold
 \renewcommand{\subsection}[1]{%
   \smallskip%
-  {\color{emphasis}\large\bfseries{#1}\par}\medskip
+  {\color{emphasis}\normalsize\bfseries{#1}\par} \smallskip
 }
 
 % format job/school list
@@ -376,16 +382,66 @@
 \newlength{\jobpositionlength}
 \setlength{\jobdateplacelength}{0.4\linewidth}
 \setlength{\jobpositionlength}{0.6\linewidth}
-\newcommand{\job}[4]{%
+\newcommand{\job}[5]{%
+    \begin{minipage}[t]{\jobdateplacelength}% minipage for left column with date/place
+        \large
+        \begin{minipage}[t]{3mm}% wrap marker in minipage to allow multi-line dates
+            \makebox[3mm][c]{\faGear}
+        \end{minipage}%
+        \hspace{0.5em}%
+           {\large \color{emphasis} #1}
+%        \begin{minipage}[t][3mm]{\jobpositionlength}% minipage for position
+%            {\large \color{emphasis} #3}
+%        \begin{minipage}[t]{\dimexpr \jobdateplacelength-3mm-0.5em}% wrap date in minipage to allow multi-line dates
+%            #1
+%        \end{minipage}%
+        \par
+        \vspace{0.1em}
+        \begin{minipage}[t]{3mm}% wrap marker in minipage to allow multi-line places
+            \footnotesize \makebox[3mm][c]{}%\faBuilding}
+        \end{minipage}%
+        \hspace{0.5em}%
+        \begin{minipage}[t]{\dimexpr \jobdateplacelength-3mm-0.5em}% wrap place in minipage to allow multi-line places
+            \footnotesize #2
+        \end{minipage}%i
+    \end{minipage}%
+        \begin{minipage}[t]{\dimexpr \jobdateplacelength-3mm-0.5em}% wrap date in minipage to allow multi-line dates
+        \hspace{0.5em}%
+        \normalsize #3
+            
+%        \begin{minipage}[t]{\dimexpr \jobdateplacelength-3mm-0.5em}% minipage for position 
+ %           \makebox[3mm][c]{\footnotesize  #4} %\faMapMarker} #4
+ %       \end{minipage}%
+        \hspace{5em}%
+        \footnotesize   #4 %city location
+    \end{minipage}%
+    \ifstrequal{#4}{}{}{
+%        \begin{minipage}[t]{3mm}% wrap marker in minipage to allow multi-line dates
+        %\par 
+        \vspace{0.5em} \hspace{0em} \footnotesize #5
+%    \end{minipage}
+    }
+    %\par \vspace{0.1em} \footnotesize #4}
+%\par\normalsize
+%\vspace{0.5em}\par \vspace{0.1em} \footnotesize #4}
+    \par \normalsize
+    \vspace{0.25em}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Education
+\newcommand{\education}[4]{%
     \begin{minipage}[t]{\jobdateplacelength}% minipage for left column with date/place
         \footnotesize
         \begin{minipage}[t]{3mm}% wrap marker in minipage to allow multi-line dates
-            \makebox[3mm][c]{\faCalendar}
+            \makebox[3mm][c]{\faCertificate}
         \end{minipage}%
         \hspace{0.5em}%
-        \begin{minipage}[t]{\dimexpr \jobdateplacelength-3mm-0.5em}% wrap date in minipage to allow multi-line dates
-            #1
-        \end{minipage}%
+           {\large \color{emphasis} #3}
+%        \begin{minipage}[t][3mm]{\jobpositionlength}% minipage for position
+%            {\large \color{emphasis} #3}
+%        \begin{minipage}[t]{\dimexpr \jobdateplacelength-3mm-0.5em}% wrap date in minipage to allow multi-line dates
+%            #1
+%        \end{minipage}%
         \par
         \vspace{0.1em}
         \begin{minipage}[t]{3mm}% wrap marker in minipage to allow multi-line places
@@ -394,16 +450,73 @@
         \hspace{0.5em}%
         \begin{minipage}[t]{\dimexpr \jobdateplacelength-3mm-0.5em}% wrap place in minipage to allow multi-line places
             #2
-        \end{minipage}%
+        \end{minipage}%i
     \end{minipage}%
-    \begin{minipage}[t]{\jobpositionlength}% minipage for position
-        {\large \color{emphasis} #3}
+        \begin{minipage}[t]{\dimexpr \jobdateplacelength-3mm-0.5em}% wrap date in minipage to allow multi-line dates
+            \begin{minipage}[t]{3mm}% wrap marker in minipage to allow multi-line dates
+                \makebox[3mm][c]{\faCalendar}
+            \end{minipage}%
+            \hspace{0.5em}%
+            #1
+%    \begin{minipage}[t]{\jobpositionlength}% minipage for position
+%        {\large \color{emphasis} #3}
     \end{minipage}%
-    \ifstrequal{#4}{}{}{\par \vspace{0.1em} \footnotesize #4}
+    \ifstrequal{#4}{}{}{
+%        \begin{minipage}[t]{3mm}% wrap marker in minipage to allow multi-line dates
+        %\par 
+        \vspace{0.5em} \hspace{0em} \footnotesize  #4
+%    \end{minipage}
+    }
+    %\par \vspace{0.1em} \footnotesize #4}
+%\par\normalsize
+%\vspace{0.5em}\par \vspace{0.1em} \footnotesize #4}
     \par\normalsize
     \vspace{0.5em}
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Project Similiar to job but with different Icons
+\newlength{\projectdateplacelength}
+\newlength{\projectpositionlength}
+\setlength{\projectdateplacelength}{0.4\linewidth}
+\setlength{\projectpositionlength}{0.6\linewidth}
+\newcommand{\project}[3]{%
+    \begin{minipage}[t]{\projectdateplacelength}% minipage for left column with date/place
+        \footnotesize
+        \begin{minipage}[t]{3mm}% wrap marker in minipage to allow multi-line dates
+            \makebox[3mm][c]{\faCube}
+        \end{minipage}%
+        \hspace{0.5em}%
+           {\large \color{emphasis} #2}
+%        \begin{minipage}[t][3mm]{\jobpositionlength}% minipage for position
+%            {\large \color{emphasis} #3}
+%        \begin{minipage}[t]{\dimexpr \jobdateplacelength-3mm-0.5em}% wrap date in minipage to allow multi-line dates
+%            #1
+%        \end{minipage}%
+        \par
+        \vspace{0.1em}
+    \end{minipage}%
+        \begin{minipage}[t]{\dimexpr \projectdateplacelength-3mm-0.5em}% wrap date in minipage to allow multi-line dates
+            \begin{minipage}[t]{3mm}% wrap marker in minipage to allow multi-line dates
+                \makebox[3mm][c]{\faCalendar}
+            \end{minipage}%
+            \hspace{0.5em}%
+            #1
+%    \begin{minipage}[t]{\jobpositionlength}% minipage for position
+%        {\large \color{emphasis} #3}
+    \end{minipage}%
+    \ifstrequal{#3}{}{}{
+%        \begin{minipage}[t]{3mm}% wrap marker in minipage to allow multi-line dates
+        %\par 
+        \vspace{0.5em} \hspace{0em} \footnotesize  #3
+%    \end{minipage}
+    }
+    %\par \vspace{0.1em} \footnotesize #4}
+%\par\normalsize
+%\vspace{0.5em}\par \vspace{0.1em} \footnotesize #4}
+    \par\normalsize
+    \vspace{0.5em}
+}
 
 % skill with 5 dot bar chart
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -499,6 +612,7 @@
 
 \newcommand*{\ADS}[1]{\textcolor{awesome-skyblue}{\href{#1}{ADS}}}
 \newcommand*{\arXiv}[1]{\textcolor{awesome-skyblue}{\href{#1}{arXiv}}}
+\newcommand*{\doi}[1]{\textcolor{awesome-skyblue}{\href{#1}{DOI}}}
 
 \newlength{\pubdatelength}
 \newlength{\pubjournallength}
@@ -516,7 +630,7 @@
 % helper function to force the publication to use the full width in normal page styles without highlight bar or header
 \newcommand{\pubforcefullwidth}{%
     \setlength{\pubdatelength}{0.1\textwidth}
-    \setlength{\pubjournallength}{0.8\textwidth}
+    \setlength{\pubjournallength}{0.80\textwidth}
     \setlength{\publinklength}{0.1\textwidth}
 }
 
@@ -566,6 +680,52 @@
     \vspace{1.0em}
 }
 
+\newcommand{\justinpublication}[5]{
+    \subsection{{#1}}
+    \vspace{0.1em}
+    \subtext{\faBook \hspace{.5em} #4}
+    \subtext{\faGroup \hspace{.5em} #2}
+    \subtext{\faCalendar \hspace{.5em} #3 \hfill \faChain \hspace{.5em} #5}
+%    \subtext{#5}
+    
+
+}
+\newcommand{\publicationSmall}[5]{%
+    {\normalsize \color{emphasis}#1\par}
+    \vspace{0.1em}%
+    \begin{minipage}[t]{3mm}%
+        \makebox[3mm][c]{\footnotesize \faGroup}
+    \end{minipage}%
+    \hspace{0.5em}%
+    \normalsize #2
+%    \begin{minipage}[t]{\dimexpr \linewidth-3mm-0.5em}%
+%        {\footnotesize #2\par}
+%    \end{minipage}%
+    \par%
+    \vspace{0.25em}%
+    \begin{minipage}[t]{3mm}%
+        \makebox[3mm][c]{\footnotesize \faBook}
+    \end{minipage}%
+    \hspace{0.5em}%
+    \normalsize #4
+    \par \vspace{0.25em}
+    \begin{minipage}[t]{\pubjournallength}%
+        \ifstrequal{#5}{}{}{%
+        \footnotesize \makebox[3mm][c]{\faChain} \hspace{0.25em} #5
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{-1em}%
+        \makebox[0mm][c]{\footnotesize \hspace{.5em} \faCalendar #3}%}
+    \end{minipage}%
+    %\par%
+    %\vspace{0.25em}%
+    %\hspace{0.1em}%
+    %\begin{minipage}[t]{\dimexpr \linewidth-3mm-0.25em}%
+    %    {\footnotesize \faCalendar} %\par %\vspace{0.25em}}
+    %\end{minipage}%
+    \par%x
+    }
+}
 % achievement
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -584,9 +744,27 @@
 % lists
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\RequirePackage{enumitem}
-\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1em}
+\RequirePackage[inline]{enumitem}
+\setlength{\tabcolsep}{0in}
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.5em}
+%%% Bold Faced Item list
+\newcommand{\skilling}[2]{
+    \item{
+        \textbf{#1}:    {#2}
+        }
+}
 
+
+%\setlist[itemize]{align=parleft,left=0pt..1em}
+\newenvironment{zitemize}{
+    \vspace{-.5em}
+    \begin{itemize} 
+        \itemsep .5pt \parskip 0pt \parsep 0pt
+        }
+    {
+        \end{itemize}
+        \vspace{.5em}
+        }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FINAL FORMATTING
@@ -594,6 +772,7 @@
 
 \pagestyle{headerhighlightmain}
 \RequirePackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=link-color}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
