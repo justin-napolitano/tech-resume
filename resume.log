@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.2.21)  14 MAR 2022 13:09
 =======
 This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.2.21)  15 MAR 2022 11:18
@@ -7,6 +8,9 @@ This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.2.21)  1
 =======
 This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.2.21)  15 MAR 2022 11:18
 >>>>>>> data-architect
+=======
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.2.21)  15 MAR 2022 12:00
+>>>>>>> aite
  restricted system commands enabled.
 **resume.tex
 (./resume.tex
@@ -1158,29 +1162,47 @@ Class scrartcl Warning: Usage of deprecated command `\ifthispageodd'.
 (scrartcl)              The command has been renamed because of a
 (scrartcl)              recommendation of The LaTeX Project Team.
 (scrartcl)              Please replace `\ifthispageodd' by `\Ifthispageodd' on 
+<<<<<<< HEAD
 input line 229.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 229--229
+=======
+input line 232.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+>>>>>>> aite
 
  []
 
 
 LaTeX Font Warning: Font shape `TU/FontAwesome(0)/m/it' undefined
+<<<<<<< HEAD
 (Font)              using `TU/FontAwesome(0)/m/n' instead on input line 229.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 229--229
+=======
+(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 232.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+>>>>>>> aite
 [][]  []  []  []
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 229--229
 []  []  []  []
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 229--230
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
+>>>>>>> aite
 
  []
 
@@ -1196,6 +1218,7 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
+<<<<<<< HEAD
  32249 strings out of 478531
  125005,1373583 words of node,token memory allocated
  513 words of node memory still in use:
@@ -1203,6 +1226,15 @@ Here is how much of LuaTeX's memory you used:
  5 attribute_list, 2 write nodes
    avail lists: 2:3899,3:1281,4:1097,5:1240,6:202,7:9142,8:41,9:870,10:5,11:604
  51143 multiletter control sequences out of 65536+600000
+=======
+ 32247 strings out of 478531
+ 125007,1373583 words of node,token memory allocated
+ 513 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 68 glue_spec,
+ 5 attribute_list, 2 write nodes
+   avail lists: 2:3807,3:1215,4:1097,5:1236,6:202,7:9144,8:41,9:850,10:4,11:612
+ 51141 multiletter control sequences out of 65536+600000
+>>>>>>> aite
  53 fonts using 13017335 bytes
  128i,15n,123p,10601b,841s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/truetype/typoland/carlito/Carlito-Bold
@@ -1212,10 +1244,14 @@ awesome/FontAwesome.otf></usr/local/texlive/2021/texmf-dist/fonts/truetype/typol
 and/carlito/Carlito-Bold.ttf></usr/local/texlive/2021/texmf-dist/fonts/truetype/
 typoland/carlito/Carlito-Regular.ttf>
 <<<<<<< HEAD
+<<<<<<< HEAD
 Output written on resume.pdf (1 page, 72530 bytes).
 =======
 Output written on resume.pdf (1 page, 72639 bytes).
 >>>>>>> data-architect
+=======
+Output written on resume.pdf (1 page, 72518 bytes).
+>>>>>>> aite
 
 PDF statistics: 70 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream
