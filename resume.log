@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.2.21)  15 MAR 2022 10:35
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.2.21)  15 MAR 2022 11:18
  restricted system commands enabled.
 **resume.tex
 (./resume.tex
@@ -1198,7 +1198,7 @@ arlito-Italic.ttf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/font
 awesome/FontAwesome.otf></usr/local/texlive/2021/texmf-dist/fonts/truetype/typol
 and/carlito/Carlito-Bold.ttf></usr/local/texlive/2021/texmf-dist/fonts/truetype/
 typoland/carlito/Carlito-Regular.ttf>
-Output written on resume.pdf (1 page, 72528 bytes).
+Output written on resume.pdf (1 page, 72530 bytes).
 
 PDF statistics: 70 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream
