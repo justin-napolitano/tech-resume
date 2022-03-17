@@ -256,7 +256,7 @@
 \newcommand{\makeheader}{% header bar is a minipage
     \begin{minipage}[t][\headerheight]{\textwidth}%
         % \vspace{-1em}
-        \vspace{\dimexpr \@namefontheight-\@namelineheight}                     % align top of name and photo
+        \vspace{\dimexpr \@namefontheight-\@namelineheight+1em}                     % align top of name and photo
         % create two minipages for header text and photo if photo is given
         \ifdef{\@photodiameter}{
             \begin{minipage}[t]{\dimexpr \textwidth-\@photodiameter}        % to top align name and photo add [t] here
