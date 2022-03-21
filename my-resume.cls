@@ -520,7 +520,10 @@
 
 % skill with 5 dot bar chart
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newcommand{\skillest}[2]{%
+    \textcolor{emphasis}{\textbf{#1}}\hfill
+    \textcolor{emphasis}{\textbf{#2}}
+    }
 \newcommand{\skill}[2]{%
     \textcolor{emphasis}{\textbf{#1}}\hfill
     \foreach \x in {1,...,5}{%

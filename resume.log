@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.2.21)  18 MAR 2022 12:33
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.2.21)  21 MAR 2022 08:02
  restricted system commands enabled.
 **resume.tex
 (./resume.tex
@@ -160,11 +160,11 @@ Package: tocbasic 2021/03/17 v3.33 KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: babel extension for `toc' omitted
 (tocbasic)             because of missing \bbl@set@language on input line 135.
-Class scrartcl Info: File `scrsize10pt.clo' used to setup font sizes on input l
+Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input l
 ine 2239.
 
-(/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrsize10pt.clo
-File: scrsize10pt.clo 2021/03/17 v3.33 KOMA-Script font size class option (10pt
+(/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2021/03/17 v3.33 KOMA-Script font size class option (11pt
 )
 luaotfload | db : Font names database loaded from /Users/jnapolitano/Library/tex
 live/2021/texmf-var/luatex-cache/generic/names/luaotfload-names.luc)
@@ -177,21 +177,21 @@ Package: typearea 2021/03/17 v3.33 KOMA-Script package (type area)
 \ta@temp=\skip51
 \footheight=\skip52
 Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 8
+(typearea)             DIV  = 10
 (typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 373.44246pt
-(typearea)              DIV departure   = -4%
-(typearea)              \evensidemargin = 77.107pt
-(typearea)              \oddsidemargin  = 2.4185pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 47.2316pt
+(typearea)              \oddsidemargin  = -12.5192pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 538.0pt
-(typearea)              \topmargin      = 0.36087pt
-(typearea)              \headheight     = 15.0pt
-(typearea)              \headsep        = 18.0pt
-(typearea)              \topskip        = 10.0pt
-(typearea)              \footskip       = 42.0pt
-(typearea)              \baselineskip   = 12.0pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
 (typearea)              on input line 1741.
 )
 \c@part=\count176
@@ -927,7 +927,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip79
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 775.
+Package hyperref Info: Option `colorlinks' set `true' on input line 778.
 )
 luaotfload | aux : font no 37 (nil) does not define feature smcp for script latn
  with language dflt
@@ -1094,12 +1094,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \topmargin=-43.81725pt
 * \headheight=0.0pt
 * \headsep=0.0pt
-* \topskip=10.0pt
+* \topskip=11.0pt
 * \footskip=0.0pt
 * \marginparwidth=0.0pt
 * \marginparsep=0.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1160,24 +1160,40 @@ Class scrartcl Warning: Usage of deprecated command `\ifthispageodd'.
 (scrartcl)              The command has been renamed because of a
 (scrartcl)              recommendation of The LaTeX Project Team.
 (scrartcl)              Please replace `\ifthispageodd' by `\Ifthispageodd' on 
-input line 233.
+input line 271.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--233
+Underfull \hbox (badness 10000) in paragraph at lines 271--271
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--271
+[]  []  []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--271
+[]  []  []  []
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 271--271
+[][][]\TU/Carlito(0)/b/n/9 Com-mer-cial Re-search[][]\TU/Carlito(0)/m/n/9 : Iden
+-ti-fy-ing struc-tural fac-tors in-flu-enc-ing in-ter-na-tional
  []
 
 
 LaTeX Font Warning: Font shape `TU/FontAwesome(0)/m/it' undefined
-(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 233.
+(Font)              using `TU/FontAwesome(0)/m/n' instead on input line 271.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--233
-[][]  []  []  []
+Underfull \hbox (badness 10000) in paragraph at lines 271--271
+[]  []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
@@ -1193,22 +1209,23 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32292 strings out of 478531
- 125007,1373583 words of node,token memory allocated
+ 32296 strings out of 478531
+ 125003,1373583 words of node,token memory allocated
  513 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 68 glue_spec,
  5 attribute_list, 2 write nodes
-   avail lists: 2:3905,3:1269,4:1093,5:1188,6:205,7:9051,8:39,9:900,10:4,11:598
- 51182 multiletter control sequences out of 65536+600000
- 53 fonts using 13017335 bytes
- 128i,15n,123p,10601b,839s stack positions out of 5000i,500n,10000p,200000b,80000s
+   avail lists: 1:1,2:4221,3:2121,4:709,5:1120,6:173,7:8809,8:39,9:1124,10:5,11:
+572
+ 51186 multiletter control sequences out of 65536+600000
+ 52 fonts using 12571727 bytes
+ 128i,15n,123p,10601b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/truetype/typoland/carlito/Carlito-Bold
 Italic.ttf></usr/local/texlive/2021/texmf-dist/fonts/truetype/typoland/carlito/C
 arlito-Italic.ttf></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/font
 awesome/FontAwesome.otf></usr/local/texlive/2021/texmf-dist/fonts/truetype/typol
 and/carlito/Carlito-Bold.ttf></usr/local/texlive/2021/texmf-dist/fonts/truetype/
 typoland/carlito/Carlito-Regular.ttf>
-Output written on resume.pdf (1 page, 550559 bytes).
+Output written on resume.pdf (1 page, 550939 bytes).
 
 PDF statistics: 70 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
