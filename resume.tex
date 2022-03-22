@@ -1,7 +1,7 @@
 \documentclass[%singlesided,
                doublesided,
                paper=a4,
-               fontsize=11pt
+               fontsize=10.5pt
               ]{my-resume}
 
 
@@ -48,7 +48,7 @@
 \begin{document}
 
 \name{Justin Napolitano}
-\tagline{Open source intelligence specialist proficient with Python, SAS, and SPSS. Experienced in\\ feature extraction, integrating data, and visualizing data for peer reviewed academic papers.}
+\tagline{Open source intelligence specialist experienced in feature extraction, data integration,\\and data visualization.  Seeking opportunity to build and analyze data pipelines.}
 \photo[round]{head_shot.jpeg}{\dimexpr 4cm-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
 
 \makeheader
@@ -71,17 +71,15 @@
     \subtext{University of Central Florida \hfill Orlando, Florida}
 
     \section{Certificates}
-    \subsection{{Python Specialization \hfill May 2020}}
+    \subsection{{\href{https://coursera.org/share/aaa9e82dd6bea4bdfe173395c46a7d6e}{Python Specialization} \hfill February 2020}}
     \subtext{University of Michigan \hfill Coursera}
 
-    \section{Skills}
+    \section{Technical Skills}
 
     \vspace{0.5em}
     \skillsection{Programming}
     \skill{Python}{4}
     \skill{C}{3}
-    \skill{SQL}{3}
-    \skill{SAS}{3}
     \skill{Go}{2}
     \skill{Java}{2}
     \skill{Javascript}{2}
@@ -90,7 +88,9 @@
     \vspace{0.5em}
     \skillsection{Data Handling and Analysis}
     \skill{Pandas}{4}
+    \skill{SAS (Statistical Analysis System)}{3}
     \skill{Statsmodels}{3}
+    \skill{SQL}{3}
 % move to competency    \skill{Matplotlib}{3}
     \skill{PySpark}{3}
     \skill{NetworkX}{2}
@@ -98,30 +98,58 @@
     
 
     \vspace{0.5em}
-    \skillsection{Languages}
+    \skillsection{Communication}
     \skill{English}{5}
     \skill{French}{3}
     \skill{Spanish}{3}
     \skill{Cantonese}{2}
 
     \section{Software and Tools}
+        \tag{Azure}    
         \tag{Bash}
-        \tag{Html}
-        \tag{CSS}
+        \tag{Docker}
+        \tag{K8s}
+        \tag{Hugo}
+        \tag{Linux}
+%        \tag{Ubuntu}
+        \tag{FreeBSD}
+        \tag{HTML/CSS}
+%        \tag{CSS}
         \tag{LaTeX}
         \tag{Markdown}
+%        \tag{myST Markdown}
+        \tag{pyTesseract}
+        \tag{Pillow}
         \tag{reStructuredText}
         \tag{Jupyter}
         \tag{Sphinx}
-        \tag{Git/Gh}
+        \tag{Git/GH}
         \tag{Docker}
         \tag{Vim}
         \tag{PyTest}
         \tag{MatplotLib}
         \tag{Neo4j}
         \tag{JanusGraph}
+        \tag{Flask}
  
-    
+%    \section{Core Competencies}
+%        \smallskip % additional skip because tag outlines use up space
+%        \tag{Legal Research}
+    %    \tag{Python Development}
+%        \tag{Sales Forecasting}
+%        \tag{Behavioral Analysis}
+    %    \tag{Data Mining}
+%        \tag{Feature Extraction}
+%        \tag{Socioeconomic Research}
+%        \tag{Project Management}
+    %    \tag{ETL}
+    %    \tag{Inferential Statistics}
+%        \tag{Sentiment Analysis}
+%        \tag{Data Visualization}
+    %    \tag{Penetration Testing}
+    %    \tag{Network Security}
+%        \tag{Economic Modeling}
+%        \tag{Ethnographic Research} 
 
 %    \tag{test}
 %    \tag{Graph Database}
@@ -184,54 +212,79 @@
 }
 \mainbar{
     \section{Experience}
-    \subsection{{Application Developer  \hfill May 2021 --- Present}}
+    \subsection{{Data Pipeline Integration  \hfill May 2021 --- Present}}
     \subtext{BTJN, LLC \hfill Houston, Texas}
     \begin{zitemize}
         \footnotesize
 %        \skilling{\href{https://docs.jnapolitano.io/parts/data/web-scraping/general-purpose/docs/realtor_scraper_sheets_4/index.html}{Data Integration}}{Integrated data into client’s existing Google Sheets workflow.}
-        \skilling{\href{https://docs.jnapolitano.io/parts/data/web-scraping/index.html}{Data Mining}}{Developed Python application to mine greater than 250,000 sales leads.}
-        \skilling{\href{https://docs.jnapolitano.io/_modules/csv_to_neo.html\#DataPipelineFunctions}{Data Transformation}}{Transformed records to client's data format with PySpark.}
-        \skilling{\href{https://docs.jnapolitano.io/_modules/csv_to_neo.html\#DataUploadFunctions}{Data Warehousing}}{Stored historical data in Neo4j warehouse.}
-        \skilling{\href{https://docs.jnapolitano.io/parts/analysis/business-analysis/project-retail-sales-forecasting/code-base/SalesForcasting.html}{Sales Forecasting}}{Modeled retail sales with Statsmodels API.}
+        %\skilling{\href{https://docs.jnapolitano.io/parts/data/web-scraping/index.html}{Data Mining}}
+        \item{Mined data from Rest API to generate 250,000 qualified sales leads.  Identified most valuable targets for client's marketing strategy.}
+        \item{Stored historical data in Neo4j warehouse to quickly scale.  Created pipeline nodes for crawlers to autonomously mine data.}
+        %\skilling{\href{https://docs.jnapolitano.io/_modules/csv_to_neo.html\#DataPipelineFunctions}{Data Transformation}}
+        \item{Integrated data with PySpark and Google Drive API to client's Google Sheets workflow from Neo4j backend.  Improved pipeline efficiency by 500 percent.}
+        %\skilling{\href{https://docs.jnapolitano.io/_modules/csv_to_neo.html\#DataUploadFunctions}{Data Warehousing}}
     \end{zitemize}
 
 
-    \subsection{{Author/Project Leader  \hfill Jan 2017 --- Aug 2019}}
+    \subsection{{CRM Development \hfill January 2021 --- May 2021}}
+    \subtext{BTJN, LLC}
+    \footnotesize
+    \begin{zitemize}
+        \item{Deployed a custom CRM solution to automate email communication and sales \\funnels.}
+        \item{Provisioned an Azure SQL server to interface with clients Office workflow.}
+        \item{Pivoted to MySQL to increase ROI for clients. Completed data transformation and integration with Python Pandas scripts.}
+
+    \end{zitemize}
+
+    \subsection{{Sales Analysis and Reporting \hfill February 2020 --- August 2020}}
+    \subtext{Cox Oil Company, Internship}
+    \footnotesize
+    \begin{zitemize}
+        \item{Forecasted sales by item for 57 retail stores with Statsmodel API to streamline \\inventory procedures.}
+        \item{Piloted Microsoft SQL Server Python wrapper application to generate common sales reports for store managers.} 
+    \end{zitemize}
+
+    \subsection{{Data Architecting and Analysis \hfill Jan 2017 --- Aug 2019}}
     \subtext{University of Central Florida \hfill Orlando, Florida}
     \begin{zitemize}
         \footnotesize
 %        \skilling{\href{https://www.degruyter.com/document/doi/10.1515/peps-2019-0036/html?lang=en}{Article Publication}}{Published in Journal of Peace Economics, Peace Science and Public Policy.}
  %       \skilling{Peer Review}{Prepared presentation for the Peace Science Conference at the Hague.}
-        \skilling{Data Visualization}{Visualized P.O.L.E graph with Matplotlib.}
-        \skilling{\href{https://docs.jnapolitano.io/parts/analysis/political-analysis/terrorism-conflict/project-turkish-kurdish/pdf.html}{Feature Extraction}}{Standardized project's feature extraction methodology.}
-        \skilling{\href{https://docs.jnapolitano.io/parts/analysis/political-analysis/terrorism-conflict/project-turkish-kurdish/analysis.html}{Inferential Statistics}}{Identified features correlated with increased event probability.}
-        \skilling{Project Management}{Trained team members to query databases and collect data points.}
+%        \skilling{Data Visualization}{Visualized P.O.L.E graph with Matplotlib.}
+        %\skilling{\href{https://docs.jnapolitano.io/parts/analysis/political-analysis/terrorism-conflict/project-turkish-kurdish/pdf.html}{Feature Extraction}}
+        \item{Standardized feature extraction methodology to enable research assistants to code data points with minimal training.}
+        \item{Implemented a third normal database to distribute data for publication.}
+        %\skilling{\href{https://docs.jnapolitano.io/parts/analysis/political-analysis/terrorism-conflict/project-turkish-kurdish/analysis.html}{Inferential Statistics}}
+        \item{Identified demographic and socioeconomic features correlated with increased event likelihood.}
+        %\skilling{Project Management}
+        
     \end{zitemize}
 
-    \subsection{{Research Assistant \hfill Jan 2017 --- Jan 2018}}
-    \subtext{University of Central Florida \hfill Orlando, Florida}
-    \begin{zitemize}
-        \skilling{Data Management}{Managed team data aggregation, verificatioon, and storage procedures.}
-        \skilling{Data Verification}{ANOVA tested human scoring against automated scoring.}
-        \skilling{Sentiment Analysis}{Automated sentiment analysis of sentences with Python NTLK.}
-    \end{zitemize}
+    %\subsection{{Research Assistant \hfill Jan 2017 --- Jan 2018}}
+    %\subtext{University of Central Florida \hfill Orlando, Florida}
+    %\begin{zitemize}
+    %    \skilling{Data Management}{Managed team data aggregation, verification, and storage procedures.}
+    %    \skilling{Anova Testing}{ANOVA tested human scoring against automated scoring.}
+    %    \skilling{Sentiment Analysis}{Automated sentiment analysis of sentences with Python NTLK.}
+    %\end{zitemize}
     
     
 
 
     \section{Projects}
-        \subsection{{\href{journal.jnapolitano.io}{Journal.Jnapolitano.io} \hfill Nov 2021 --- Present}}
+%        \subsection{{\href{journal.jnapolitano.io}{Journal.Jnapolitano.io} \hfill Nov 2021 --- Present}}
         %\subtext{Personal Project \hfill Houston, Texas}
         \hspace{.5em}
         {\begin{zitemize}
             \footnotesize
-            \skilling{\href{https://journal.jnapolitano.io/\#articles}{Commercial Research}}{Identifying structural factors influencing international trade.}
-            \skilling{\href{https://docs.jnapolitano.io/parts/analysis/political-analysis/sup-court/project-sup-court-meta-data-graph/index.html}{Metadata Mining}}{Extracting features from the Library of Congress API.}
-            \skilling{\href{https://docs.jnapolitano.io/parts/analysis/political-analysis/sup-court/project-supcourt-tensorflow/index.html}{Tensorflow Behavioral Prediction}}{Predicting Supreme Court outcomes with TensorFlow.}
-            \skilling{\href{https://docs.jnapolitano.io/\#python-development}{Python Tools}}{Releasing Python tools to interface with Neo4j, JanusGraph, and Google APIs.}
+%            \skilling{\href{https://journal.jnapolitano.io/\#articles}{Commercial Research}}{Identifying structural factors influencing international trade.}
+            \skilling{\href{https://docs.jnapolitano.io/parts/analysis/political-analysis/sup-court/project-sup-court-meta-data-graph/index.html}{US Supreme Court Metadata Graph}}{Mined text data from the Library of Congress API to cluster by political issue area.}
+            \skilling{\href{https://docs.jnapolitano.io/parts/analysis/political-analysis/sup-court/project-supcourt-tensorflow/index.html}{Tensorflow Behavioral Prediction Paper}}{Predicted Supreme Court outcomes with TensorFlow.}
+            \skilling{\href{https://docs.jnapolitano.io/\#python-development}{Python Tools}}{Published Python tools to interface with Neo4j, JanusGraph, and Google APIs.}
+            \skilling{\href{https://docs.jnapolitano.io}{docs.jnapolitano.io}}{Generated static website with Sphinx to document my CV.}
 %            \skilling{\href{https://journal.jnapolitano.io/\#tutorials}{Developer Tutorials}}{Writing tutorials for developer tools and programming languages.}
 %                \skilling{\href{https://journal.jnapolitano.io/\#reference}{Python Reference}}{Collecting algorithms and data structures to implement in future projects.}
-            \skilling{\href{https://github.com/justin-napolitano/cv}{Static Web Site Generation}}{Creating websites with Sphinx and the Jupyter Book.}
+%            \skilling{\href{https://github.com/justin-napolitano/cv}{Static Web Site Generation}}{Creating websites with Sphinx and the Jupyter Book.}
 %            \skilling{\href{docs.jnapolitano.io}{Project Documentation}}{Documenting Projects with Markdown, reStructuredText, and LaTeX.}
  
         \end{zitemize}
@@ -248,24 +301,7 @@
     {Peace Economics, Peace Science and Public Policy vol 25, no. 4, pp. 36} % Journal
     {\doi{https://doi.org/10.1515/peps-2019-0036}} % ADS & arxiv links   
      
-    \section{Core Competencies}
-    \smallskip % additional skip because tag outlines use up space
-    \tag{Legal Research}
-%    \tag{Python Development}
-    \tag{Sales Forecasting}
-    \tag{Behavioral Analysis}
-%    \tag{Data Mining}
-    \tag{Feature Extraction}
-    \tag{Socioeconomic Research}
-    \tag{Project Management}
-%    \tag{ETL}
-%    \tag{Inferential Statistics}
-    \tag{Sentiment Analysis}
-    \tag{Data Visualization}
-%    \tag{Penetration Testing}
-%    \tag{Network Security}
-    \tag{Economic Modeling}
-    \tag{Ethnographic Research}
+
     
 }
 \makebody
