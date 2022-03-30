@@ -747,6 +747,8 @@
 % lists
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+
 \RequirePackage[inline]{enumitem}
 \setlength{\tabcolsep}{0in}
 \setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.5em}
