@@ -337,7 +337,7 @@
             \hspace{\dimexpr \marginleft+\marginright}%
             \@mainbar
         }{% if double layout, the highlight bar alternates
-            \ifthispageodd{% if the page is odd, the highlight bar is on the left (as is for single layout)
+            \Ifthispageodd{% if the page is odd, the highlight bar is on the left (as is for single layout)
                 \@highlightbar
                 \hspace{\dimexpr \marginleft+\marginright}%
                 \@mainbar
@@ -364,14 +364,14 @@
     \bigskip%
     % \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr 1pt-\baselineskip}\raggedright\input{#1}}}%
     \ifstrequal{#1}{}{}{\makebox[5mm][c]{#1}\hspace{0.5em}}
-    {\color{heading}\Large\bfseries\MakeUppercase{#2}}\\[-1ex]%
+    {\color{heading}\normalsize\bfseries\MakeUppercase{#2}}\\[-1ex]%
     {\color{heading}\rule{\linewidth}{1.0pt}\par}\smallskip
 }
 
 % redefine subsection as bold
 \renewcommand{\subsection}[1]{%
   \smallskip%
-  {\color{emphasis}\normalsize\bfseries{#1}\par} \smallskip
+  {\color{emphasis}\small\bfseries{#1}\par} \smallskip
 }
 
 % format job/school list
