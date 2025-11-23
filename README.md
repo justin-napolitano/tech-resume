@@ -1,26 +1,96 @@
 # my-resume
-Another LaTeX template for a resume/CV. This one was inspired by ![AltaCV](https://github.com/liantze/AltaCV) and various others but does exactly what I needed.
-It borrows a few lines of code from ![AltaCV](https://github.com/liantze/AltaCV) and ![AwesomeCV](https://github.com/posquit0/Awesome-CV).
 
-Note that my-resume runs on XeLaTeX.
+A LaTeX resume/CV template designed for customization and clarity. Inspired by AltaCV and AwesomeCV, this template runs on XeLaTeX and provides a flexible framework for creating professional resumes.
 
-An Overleaf template can be found here: ![overleaf template](https://www.overleaf.com/latex/templates/my-resume/qxsxdtmknkfr)  
-(Note that this template may not be the most up-to-date version. Try the latest version from GitHub first if you encounter problems.)
+---
 
-# Example PDF
+## Features
 
-The three pages below show most possibilities that are implemented in my-resume. There are different pagestyles available, colors, header and much more can be optimized to match your taste.
+- Custom LaTeX class (`my-resume.cls`) for resume formatting
+- Options for single-sided or double-sided page layouts
+- Highlight bar with configurable placement
+- Support for header customization
+- Multiple page styles and color options
+- Compatible with XeLaTeX for font and graphics support
+- Includes example PDFs demonstrating layout variations
 
-The default page style features a header and a highlight bar.
+## Tech Stack
 
-![Example PDF page 1](https://github.com/GiantMolecularCloud/my-resume/blob/main/resume-1.png "Example PDF page 1")
+- LaTeX (XeLaTeX engine)
+- Python (build automation script)
+- Makefile (build automation, assumed from `make` commands)
 
-For consecutive pages, a layout with the highlight bar but without the header might be needed.
-Depending on the options for my-resume, the highlight bar can alternate between pages (option doublesided) or stay on the left side for all pages (option singlesided).
-In this case, the highlight bar is left empty and appears as a grey block.
+## Getting Started
 
-![Example PDF page 2](https://github.com/GiantMolecularCloud/my-resume/blob/main/resume-2.png "Example PDF page 2")
+### Prerequisites
 
-Empty pages are possible as well.
+- XeLaTeX installed
+- Python 3
+- `make` utility
 
-![Example PDF page 3](https://github.com/GiantMolecularCloud/my-resume/blob/main/resume-3.png "Example PDF page 3")
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/justin-napolitano/tech-resume.git
+cd tech-resume
+```
+
+2. Install Python dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Build the Resume
+
+Run the build script or use make commands:
+
+```bash
+make clean
+make html
+```
+
+Alternatively, use the provided Python build script:
+
+```bash
+python python-build.py
+```
+
+### Compile Manually
+
+Compile the LaTeX source with XeLaTeX:
+
+```bash
+xelatex resume.tex
+```
+
+## Project Structure
+
+```
+tech-resume/
+├── deployz/                # (Assumed deployment scripts or assets)
+├── sections/               # LaTeX sections for modular resume content
+├── my-resume.cls           # Custom LaTeX class for resume
+├── python-build.py         # Python script for build automation
+├── resume.tex              # Main LaTeX resume source file
+├── README.md               # This documentation
+├── LICENSE                 # License file
+├── resume.pdf              # Compiled resume example
+├── resume-*.png            # Example output screenshots
+├── *.log, *.aux, *.out     # LaTeX auxiliary files
+└── picture.jpg, head_shot.jpeg  # Images used in the resume
+```
+
+## Future Work / Roadmap
+
+- Update Overleaf template to sync with latest GitHub version
+- Add more customization options for colors and fonts
+- Improve build automation and error handling in Python script
+- Add unit tests for build pipeline
+- Expand documentation with usage examples and troubleshooting
+
+---
+
+For issues or contributions, please open a GitHub issue or pull request.
