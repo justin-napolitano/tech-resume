@@ -1,12 +1,28 @@
 ---
-slug: "github-tech-resume"
-title: "tech-resume"
-repo: "justin-napolitano/tech-resume"
-githubUrl: "https://github.com/justin-napolitano/tech-resume"
-generatedAt: "2025-11-23T09:46:37.514217Z"
-source: "github-auto"
+slug: github-tech-resume
+title: Custom LaTeX Resume Template with Build Automation and Modular Design
+repo: justin-napolitano/tech-resume
+githubUrl: https://github.com/justin-napolitano/tech-resume
+generatedAt: '2025-11-23T09:46:37.514217Z'
+source: github-auto
+summary: >-
+  Description of a LaTeX resume template built as a custom class with XeLaTeX support, Python build
+  automation, and modular project organization.
+tags:
+  - latex
+  - resume-template
+  - xelatex
+  - python-build
+  - build-automation
+  - modular-design
+seoPrimaryKeyword: latex resume template
+seoSecondaryKeywords:
+  - xelatex
+  - build automation
+  - python build script
+  - modular project organization
+seoOptimized: true
 ---
-
 
 # Technical Overview of the my-resume LaTeX Template
 
@@ -47,3 +63,4 @@ The repository contains multiple example PDFs and PNGs demonstrating different p
 This project exemplifies a pragmatic approach to resume creation using LaTeX, balancing customization with automation. The custom class abstracts layout complexity, while the Python build script integrates dependency management and build orchestration. The modular structure supports maintainability and scalability.
 
 Returning to this project, one should first ensure the build environment is configured with XeLaTeX, Python packages, and make utilities. Understanding the class options and build script flow will expedite modifications and extensions.
+
