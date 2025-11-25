@@ -1,19 +1,30 @@
 ---
 slug: github-tech-resume
 id: github-tech-resume
-title: my-resume
+title: Customizable LaTeX Resume Template with XeLaTeX Support
 repo: justin-napolitano/tech-resume
 githubUrl: https://github.com/justin-napolitano/tech-resume
 generatedAt: '2025-11-24T21:36:38.791Z'
 source: github-auto
 summary: >-
-  A LaTeX resume/CV template designed for customization and clarity. Inspired by
-  AltaCV and AwesomeCV, this template runs on XeLaTeX and provides a flexible
-  framework for creating professional resumes.
-tags: []
-seoPrimaryKeyword: ''
-seoSecondaryKeywords: []
-seoOptimized: false
+  A flexible LaTeX resume template that supports customization and automation
+  for professional CV creation using XeLaTeX.
+tags:
+  - latex
+  - xelatex
+  - resume
+  - python
+  - makefile
+  - cv
+  - build automation
+seoPrimaryKeyword: latex resume template
+seoSecondaryKeywords:
+  - custom resume LaTeX
+  - XeLaTeX CV
+  - build automation script
+  - resume customization
+  - professional CV template
+seoOptimized: true
 topicFamily: null
 topicFamilyConfidence: null
 kind: project
