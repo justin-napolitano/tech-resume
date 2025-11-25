@@ -1,13 +1,13 @@
 ---
 slug: github-tech-resume
-title: Custom LaTeX Resume Template with Build Automation and Modular Design
+title: Technical Overview of the my-resume LaTeX Template
 repo: justin-napolitano/tech-resume
 githubUrl: https://github.com/justin-napolitano/tech-resume
 generatedAt: '2025-11-23T09:46:37.514217Z'
 source: github-auto
 summary: >-
-  Description of a LaTeX resume template built as a custom class with XeLaTeX support, Python build
-  automation, and modular project organization.
+  Explore a customizable LaTeX resume template with build automation and modular
+  organization for professional document creation.
 tags:
   - latex
   - resume-template
@@ -15,20 +15,30 @@ tags:
   - python-build
   - build-automation
   - modular-design
+  - resume template
+  - python
+  - build automation
+  - scrartcl
+  - project organization
 seoPrimaryKeyword: latex resume template
 seoSecondaryKeywords:
-  - xelatex
-  - build automation
-  - python build script
-  - modular project organization
+  - custom latex class
+  - build automation with python
+  - modular resume design
+  - professional resume creation
+  - xeLaTeX dependencies
 seoOptimized: true
 topicFamily: latex
 topicFamilyConfidence: 0.95
 topicFamilyNotes: >-
-  The blog focuses on a custom LaTeX resume template with modular design and build automation,
-  explicitly mentioning a LaTeX class, XeLaTeX, and build scripts. The 'latex' family description
-  and tags align closely with resume templates and LaTeX document automation. While build automation
-  is part of the post, it primarily supports the LaTeX resume project, so 'latex' is the best fit.
+  The blog focuses on a custom LaTeX resume template with modular design and
+  build automation, explicitly mentioning a LaTeX class, XeLaTeX, and build
+  scripts. The 'latex' family description and tags align closely with resume
+  templates and LaTeX document automation. While build automation is part of the
+  post, it primarily supports the LaTeX resume project, so 'latex' is the best
+  fit.
+kind: project
+id: github-tech-resume
 ---
 
 # Technical Overview of the my-resume LaTeX Template
