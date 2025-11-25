@@ -7,8 +7,8 @@ githubUrl: https://github.com/justin-napolitano/tech-resume
 generatedAt: '2025-11-24T21:36:38.791Z'
 source: github-auto
 summary: >-
-  A flexible LaTeX resume template that supports customization and automation
-  for professional CV creation using XeLaTeX.
+  A flexible LaTeX resume template that supports customization and automation for professional CV
+  creation using XeLaTeX.
 tags:
   - latex
   - xelatex
@@ -25,8 +25,8 @@ seoSecondaryKeywords:
   - resume customization
   - professional CV template
 seoOptimized: true
-topicFamily: null
-topicFamilyConfidence: null
+topicFamily: latex
+topicFamilyConfidence: 0.9
 kind: project
 entryLayout: project
 showInProjects: true
@@ -129,4 +129,5 @@ tech-resume/
 ---
 
 For issues or contributions, please open a GitHub issue or pull request.
+
 
